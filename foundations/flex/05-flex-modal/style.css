@@ -17,13 +17,13 @@ body {
 
 .modal {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   background: white;
   width: 480px;
   border-radius: 10px;
   box-shadow: 2px 4px 16px rgba(0,0,0,.2);
-  align-items: center;
   padding: 20px;
+  gap: 20px;
 }
 
 .icon {
@@ -37,6 +37,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-shrink: 0;
 }
 
 .close-button {
@@ -74,4 +75,12 @@ button.cancel {
 
 .header{
   margin-right: auto;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.content{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
 }
